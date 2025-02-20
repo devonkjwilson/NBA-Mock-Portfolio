@@ -1,4 +1,4 @@
-NBA Data Engineering Project
+#NBA Data Engineering Project
 🚀 End-to-End ETL Pipeline | Data Analysis | Cloud Integration
 📌 Project Overview
 This project showcases an end-to-end data engineering workflow using NBA data. The dataset includes player statistics, team histories, game schedules, and performance metrics, making it perfect for ETL pipelines, SQL analysis, and cloud-based data engineering.
@@ -14,10 +14,10 @@ The dataset consists of multiple CSV files and an SQL database containing:
 📊 TeamHistories.csv - Historical team performance.
 📌 TeamStatistics.csv - Team stats like wins, losses, and efficiency.
 ⚙️ Technologies Used
-Python (Pandas, NumPy, PySpark)
-SQL (PostgreSQL / MySQL / SQLite)
-ETL Pipeline (Apache Airflow)
-Cloud Storage (AWS S3, Redshift, Athena)
-Data Visualization (Power BI, Matplotlib, Seaborn)
-FastAPI (for building an API to serve NBA insights)
+-Python (Pandas, NumPy, PySpark)
+-SQL (PostgreSQL / MySQL / SQLite)
+-ETL Pipeline (Apache Airflow)
+-Cloud Storage (AWS S3, Redshift, Athena)
+-Data Visualization (Power BI, Matplotlib, Seaborn)
+-FastAPI (for building an API to serve NBA insights)
 📂 Project Structure

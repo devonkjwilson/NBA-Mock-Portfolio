@@ -21,3 +21,11 @@ The dataset consists of multiple CSV files and an SQL database containing:
 -Data Visualization (Power BI, Matplotlib, Seaborn)
 -FastAPI (for building an API to serve NBA insights)
 📂 Project Structure
+nba-data-engineering/ 
+├── data/ # Raw and processed data 
+├── scripts/ # Python scripts for ETL 
+├── dags/ # Apache Airflow DAGs 
+├──  Notebook #data cleaning hub
+├── powerbi/ # Power BI reports 
+├── .github/workflows/ # GitHub Actions 
+├── README.md

@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Define file path
-file_path = "data/Players.csv"  # Update the path if needed
+Players_path = "data/Players.csv"  # Update the path if needed
 
 try:
     # Load CSV file

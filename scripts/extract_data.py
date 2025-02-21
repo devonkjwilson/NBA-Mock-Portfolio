@@ -1,11 +1,13 @@
 import pandas as pd
 
 # Define file path
+Games_path = "data/Games.csv"
 Players_path = "data/Players.csv"  # Update the path if needed
 LeaugeSchedule_path = "data/LeagueSchedule24_25.csv"
 Playerstats_path = "data/PlayerStatistics (1).xlsx"
 TeamHistories_path = "data/TeamHistories.csv"
 TeamStats_path = "data/TeamStatistics.csv"
+
 try:
     # Load CSV file
     df = pd.read_csv(Players_path)
@@ -52,5 +54,15 @@ try:
     print(df.head())  # Show first 5 rows
 except FileNotFoundError:
     print(f"❌ Error: File {TeamStats_path} not found.")
+except Exception as e:
+    print(f"❌ Error: {e}")
+
+try:
+    # Load CSV file
+    df = pd.read_csv(Games_path)
+    print(f"✅ Successfully extracted data from {Games_path}")
+    print(df.head())  # Show first 5 rows
+except FileNotFoundError:
+    print(f"❌ Error: File {Games_path} not found.")
 except Exception as e:
     print(f"❌ Error: {e}")

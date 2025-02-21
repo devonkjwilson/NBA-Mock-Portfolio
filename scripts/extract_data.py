@@ -10,7 +10,7 @@ file_paths = {
 Team_Stats_df = pd.read_csv("data/TeamStatistics.csv", delimiter=",", header=0, low_memory=False)
 Player_Stats_df = pd.read_excel("data/PlayerStatistics (1)xlsx", delimiter=",", header=0, low_memory=False)
 Games_df = pd.read_csv("data/Games.csv", delimiter=",", header=0, low_memory=False)
-# Function to load CSV in chunks for large files
+
 def load_csv(file_path, chunk_size=100000):
     try:
         # Check if file exists and is not empty

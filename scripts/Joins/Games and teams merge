@@ -1,0 +1,28 @@
+import pandas as pd
+
+# Load game and team statistics data
+games_path = "data/Games.csv"
+team_stats_path = "data/TeamStatistics.csv"
+
+try:
+    games_df = pd.read_csv(games_path)
+    team_stats_df = pd.read_csv(team_stats_path)
+
+    print("✅ Successfully loaded Games.csv and TeamStatistics.csv")
+
+    # Identify the common key for merging
+    # Possible keys: 'game_id', 'team_id', 'date'
+    merge_key = "game_id"  # Adjust if needed based on data structure
+
+    # Merge data on the selected key
+    merged_df = pd.merge(games_df, team_stats_df, on=merge_key, how="left")
+
+    # Save merged dataset
+    merged_df.to_csv("data/merged_game_stats.csv", index=False)
+
+    print("✅ Merged data saved as merged_game_stats.csv")
+
+except FileNotFoundError as e:
+    print(f"❌ Error: {e}")
+except Exception as e:
+    print(f"❌ Unexpected Error: {e}")

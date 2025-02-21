@@ -47,7 +47,7 @@ except Exception as e:
 
 try:
     # Load CSV file
-    df = pd.read_csv(TTeamStats_path)
+    df = pd.read_csv(TeamStats_path)
     print(f"✅ Successfully extracted data from {TeamStats_path}")
     print(df.head())  # Show first 5 rows
 except FileNotFoundError:

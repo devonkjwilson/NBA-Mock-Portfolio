@@ -7,7 +7,8 @@ team_stats_path = "data/TeamStatistics.csv"
 try:
     games_df = pd.read_csv(games_path)
     team_stats_df = pd.read_csv(team_stats_path)
-
+    print(games_df.head())
+    print(team_stats_df.head())
     print("✅ Successfully loaded Games.csv and TeamStatistics.csv")
 
     # Identify the common key for merging

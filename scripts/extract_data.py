@@ -4,7 +4,7 @@ import pandas as pd
 Players_path = "data/Players.csv"  # Update the path if needed
 LeaugeSchedule_path = "data/LeagueSchedule24_25.csv"
 Playerstats_path = "data/PlayerStatistics (1).xlsx"
-TeamHistories_path "data/TeamHistories.csv"
+TeamHistories_path = "data/TeamHistories.csv"
 TeamStats_path = "data/TeamStatistics.csv"
 try:
     # Load CSV file

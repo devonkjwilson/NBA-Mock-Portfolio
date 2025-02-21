@@ -26,3 +26,5 @@ except FileNotFoundError as e:
     print(f"❌ Error: {e}")
 except Exception as e:
     print(f"❌ Unexpected Error: {e}")
+merged_df.to_csv("data/merged_game_stats.csv", index=False)
+print("✅ Merged data saved as merged_game_stats.csv")

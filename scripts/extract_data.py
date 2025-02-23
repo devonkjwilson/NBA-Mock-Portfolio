@@ -6,9 +6,9 @@ file_paths = {
     "League Schedule": "data/LeagueSchedule24_25.csv",
     "Players": "data/Players.csv",
     "Team Histories": "data/TeamHistories.csv",
-    "Team Statistics": "data/TeamStatistics.xlsx",
+    "Team Statistics": "data/TeamStatistics.cvs",
     "Player Statistics": "data/PlayerStatistics (1).xlsx",
-    "Games": "data/Games.xlsx"
+    "Games": "data/Games.csv"
 }
 
 # Function to load CSV files efficiently

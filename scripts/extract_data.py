@@ -8,7 +8,7 @@ file_paths = {
     "Team Histories": "data/TeamHistories.csv"
 }
 Team_Stats_df = pd.read_csv("data/TeamStatistics.csv", delimiter=",", header=0, low_memory=False)
-Player_Stats_df = pd.read_excel("data/PlayerStatistics (1)xlsx", delimiter=",", header=0, low_memory=False)
+Player_Stats_df = pd.read_excel("data/PlayerStatistics (1).xlsx", header=0)  # Corrected
 Games_df = pd.read_csv("data/Games.csv", delimiter=",", header=0, low_memory=False)
 
 def load_csv(file_path, chunk_size=100000):

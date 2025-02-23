@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-# Define file paths
+# Define file paths 
 file_paths = {
     "League Schedule": "data/LeagueSchedule24_25.csv",
     "Players": "data/Players.csv",

@@ -63,3 +63,22 @@ for name, df in dataframes.items():
     if df is not None:
         print(f"\n🔍 Preview of {name}:")
         print(df.head())
+
+# 📌 Merge Players with Player Statistics
+player_merged_df = pd.merge(player_stats_df, players_df, on="personId", how="left")
+
+# 📌 Merge Games with Team Statistics
+team_merged_df = pd.merge(games_df, team_stats_df, on="gameId", how="left")
+
+# 📌 Merge Team Histories
+final_team_df = pd.merge(team_merged_df, team_histories_df, on="teamId", how="left")
+
+# 📌 Merge Team Data with Player Data
+final_df = pd.merge(final_team_df, player_merged_df, on="gameId", how="left")
+
+# 📌 Save final merged dataset
+output_path = "data/final_merged_dataset.csv"
+final_df.to_csv(output_path, index=False)
+
+print(f"✅ Successfully merged datasets and saved as {output_path}")
+print(final_df.head())  # Preview first 5 rows

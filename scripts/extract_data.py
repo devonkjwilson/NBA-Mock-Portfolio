@@ -65,8 +65,8 @@ team_stats_df = dataframes.get("Team Statistics")
 team_histories_df = dataframes.get("Team Histories")
 
 # 📌 Ensure all datasets are loaded
-if None in [players_df, player_stats_df, games_df, team_stats_df, team_histories_df]:
-    print("❌ Stopping script due to missing data.")
+if any(df is None or df.empty for df in [players_df, player_stats_df, games_df, team_stats_df, team_histories_df]):
+    print("❌ Stopping script due to missing or empty data.")
     exit()
 
 # 📌 Merge Players with Player Statistics

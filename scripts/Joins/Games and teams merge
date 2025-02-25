@@ -1,21 +1,6 @@
 import pandas as pd
 import os
 
-# Load cleaned datasets
-games_path = "data/cleaned_games.csv"
-team_stats_path = "data/cleaned_team_statistics.csv"
-players_path = "data/cleaned_players.csv"
-player_stats_path = "data/cleaned_player_statistics.csv"
-league_schedule_path = "data/cleaned_league_schedule.csv"
-team_histories_path = "data/cleaned_team_histories.csv"
-
-def load_csv(file_path):
-    """Load a CSV file if it exists."""
-    if not os.path.exists(file_path):
-        print(f"❌ Error: {file_path} not found.")
-        return None
-    return pd.read_csv(file_path)
-
 # Load all datasets
 games_df = load_csv(games_path)
 team_stats_df = load_csv(team_stats_path)
